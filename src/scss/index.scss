@@ -192,12 +192,16 @@
 .about {
     margin-top: 206px;
     font-family: $font-quicksand;
+    max-width: $container-width;
+    width: 100%;
+    margin: auto;
 
     &__aboutUs-text {
         text-align: center;
         font-weight: 600;
         font-size: 24px;
         color: #377DFF;
+        margin-top: 206px;
     }
 
     &__title {
@@ -207,4 +211,63 @@
         font-weight: 700;
         font-size: 55px;
     }
+
+    &__teammate {
+        display: flex;
+        margin-top: 38px;
+    }
+
+    &__our-teammate {
+
+        img {
+            max-width: 503px;
+        }
+    }
+
+    &__text-inside {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    &__two-text-inside {
+        font-size: 20px;
+        margin: 24px 0 0 50px;
+    }
+
+    &__button {
+        margin: 24px 0 0 65px;
+        display: flex;
+
+        button {
+            font-weight: 700;
+            padding: 12px 50px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-family: $font-quicksand;
+
+            img {
+                margin-right: 10px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+    }
+
+    &__about-button {
+        background: #377DFF;
+        color: #fff;
+        box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+        border: none;
+    }
+
+    &__story-button {
+        background: #fff;
+        color: #377DFF;
+        border: 1px solid #377DFF;
+        display: flex;
+        align-items: center;
+    }
+
 }
