@@ -12,7 +12,7 @@
     margin: auto;
     margin-top: 72px;
     display: flex;
-    font-family: "Quicksand";
+    font-family: $font-quicksand;
     align-items: center;
     justify-content: space-between;
 
@@ -38,7 +38,7 @@
 
     &__nav-item {
         list-style-type: none;
-        
+
         &:not(:last-child) {
             margin-right: 50px;
         }
@@ -51,6 +51,7 @@
     a {
         text-decoration: none;
         font-size: 18px;
+
         &:hover {
             text-shadow: 0 0 .65px #1D1D1D, 0 0 .65px #1D1D1D;
         }
@@ -67,7 +68,143 @@
     }
 }
 
+.banner {
+    margin-top: 68px;
+    font-family: $font-nunito;
 
+    &__title {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 800;
+        color: #1D1D1D;
+    }
 
+    &__description {
+        margin-top: 24px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        color: #464646;
+    }
 
+    &__container-button {
+        text-align: center;
+        margin-top: 32px;
 
+        button {
+            padding: 12px 50px;
+            background: #377DFF;
+            box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+            border-radius: 24px;
+            color: #fff;
+            border: none;
+            font-family: $font-quicksand;
+            font-size: 16px;
+        }
+    }
+
+    &__background-img {
+        width: 100%;
+        margin: 103px auto 0;
+        position: relative;
+        max-width: 739px;
+    }
+
+    &__evaluation {
+        width: 175px;
+        height: 95px;
+        position: absolute;
+        left: -107px;
+        padding: 20px;
+        top: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+    }
+
+    &__great-project {
+        font-size: 12px;
+        font-family: $font-quicksand;
+        font-weight: 700;
+        color: #1D1D1D;
+    }
+
+    &__done {
+        font-family: $font-nunito;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    &__evaluation-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    &__people-message {
+        position: absolute;
+        left: 680px;
+        bottom: -7px;
+        padding: 20px;
+        width: 166px;
+        height: 166px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+    }
+
+    &__people-name {
+        margin-right: 3px;
+    }
+
+    &__people {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__name-people {
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: $font-quicksand;
+    }
+
+    &__uptech {
+        font-size: 10px;
+        opacity: 0.5;
+        margin-left: 10px;
+        font-family: $font-quicksand;
+    }
+
+    &__message {
+        font-size: 10px;
+        margin-top: 17px;
+        font-family: $font-nunito;
+    }
+}
+
+.about {
+    margin-top: 206px;
+    font-family: $font-quicksand;
+
+    &__aboutUs-text {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        color: #377DFF;
+    }
+
+    &__title {
+        font-family: $font-nunito;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 55px;
+    }
+}

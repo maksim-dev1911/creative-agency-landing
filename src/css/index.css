@@ -55,3 +55,126 @@
   cursor: pointer;
   border-radius: 24px;
 }
+
+.banner {
+  margin-top: 68px;
+  font-family: "Nunito";
+}
+.banner__title {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+  color: #1D1D1D;
+}
+.banner__description {
+  margin-top: 24px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #464646;
+}
+.banner__container-button {
+  text-align: center;
+  margin-top: 32px;
+}
+.banner__container-button button {
+  padding: 12px 50px;
+  background: #377DFF;
+  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+  border-radius: 24px;
+  color: #fff;
+  border: none;
+  font-family: "Quicksand";
+  font-size: 16px;
+}
+.banner__background-img {
+  width: 100%;
+  margin: 103px auto 0;
+  position: relative;
+  max-width: 739px;
+}
+.banner__evaluation {
+  width: 175px;
+  height: 95px;
+  position: absolute;
+  left: -107px;
+  padding: 20px;
+  top: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+.banner__great-project {
+  font-size: 12px;
+  font-family: "Quicksand";
+  font-weight: 700;
+  color: #1D1D1D;
+}
+.banner__done {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+}
+.banner__evaluation-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__evaluation-title img {
+  margin-right: 5px;
+}
+.banner__people-message {
+  position: absolute;
+  left: 680px;
+  bottom: -7px;
+  padding: 20px;
+  width: 166px;
+  height: 166px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+.banner__people-name {
+  margin-right: 3px;
+}
+.banner__people {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.banner__name-people {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Quicksand";
+}
+.banner__uptech {
+  font-size: 10px;
+  opacity: 0.5;
+  margin-left: 10px;
+  font-family: "Quicksand";
+}
+.banner__message {
+  font-size: 10px;
+  margin-top: 17px;
+  font-family: "Nunito";
+}
+
+.about {
+  margin-top: 206px;
+  font-family: "Quicksand";
+}
+.about__aboutUs-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: #377DFF;
+}
+.about__title {
+  font-family: "Nunito";
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 55px;
+}
