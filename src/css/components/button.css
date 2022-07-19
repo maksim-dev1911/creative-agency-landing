@@ -1,0 +1,18 @@
+.button {
+  padding: 12px 50px;
+  border-radius: 24px;
+  font-family: "Quicksand";
+  font-size: 16px;
+  cursor: pointer;
+}
+.button--secondary {
+  color: #377DFF;
+  border: 1px solid #377DFF;
+  background-color: #fff;
+}
+.button--primary {
+  background: #377DFF;
+  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+  color: #fff;
+  border: none;
+}
