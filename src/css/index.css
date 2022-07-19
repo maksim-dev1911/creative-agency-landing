@@ -1,3 +1,22 @@
+.button {
+  padding: 12px 50px;
+  border-radius: 24px;
+  font-family: "Quicksand";
+  font-size: 16px;
+  cursor: pointer;
+}
+.button--secondary {
+  color: #377DFF;
+  border: 1px solid #377DFF;
+  background-color: #fff;
+}
+.button--primary {
+  background: #377DFF;
+  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+  color: #fff;
+  border: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,6 +84,9 @@
   font-size: 64px;
   font-weight: 800;
   color: #1D1D1D;
+  max-width: 749px;
+  width: 100%;
+  margin: auto;
 }
 .banner__description {
   margin-top: 24px;
@@ -76,16 +98,6 @@
 .banner__container-button {
   text-align: center;
   margin-top: 32px;
-}
-.banner__container-button button {
-  padding: 12px 50px;
-  background: #377DFF;
-  box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-  border-radius: 24px;
-  color: #fff;
-  border: none;
-  font-family: "Quicksand";
-  font-size: 16px;
 }
 .banner__background-img {
   width: 100%;
@@ -165,7 +177,7 @@
   margin-top: 206px;
   font-family: "Quicksand";
 }
-.about__aboutUs-text {
+.about__head-text {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
