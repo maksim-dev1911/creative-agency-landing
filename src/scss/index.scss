@@ -7,13 +7,16 @@
     padding: 0;
 }
 
+body {
+    font-family: "Quicksand";
+}
+
 .header {
     max-width: $container-width;
     width: 100%;
     margin: auto;
     margin-top: 72px;
     display: flex;
-    font-family: $font-quicksand;
     align-items: center;
     justify-content: space-between;
 
@@ -52,43 +55,38 @@
     a {
         text-decoration: none;
         font-size: 18px;
+        color: $blackcolor;
+        transition: 0.5s;
 
         &:hover {
-            text-shadow: 0 0 .65px #1D1D1D, 0 0 .65px #1D1D1D;
+            text-shadow: 0 0 .65px $blackcolor, 0 0 .65px $blackcolor;
+            transition: 0.5s;
         }
-    }
-
-    button {
-        font: inherit;
-        color: #377DFF;
-        background-color: transparent;
-        border: 1px solid #377DFF;
-        padding: 12px 50px;
-        cursor: pointer;
-        border-radius: 24px;
     }
 }
 
 .banner {
     margin-top: 68px;
-    font-family: $font-nunito;
 
     &__title {
         text-align: center;
         font-size: 64px;
         font-weight: 800;
-        color: #1D1D1D;
+        color: $blackcolor;
+        font-family: "Nunito";
         max-width: 749px;
         width: 100%;
         margin: auto;
     }
 
     &__description {
-        margin-top: 24px;
         text-align: center;
         font-weight: 400;
         font-size: 20px;
-        color: #464646;
+        color: $greycolor;
+        max-width: 767px;
+        width: 100%;
+        margin: 24px auto 0;
     }
 
     &__container-button {
@@ -117,15 +115,16 @@
 
     &__great-project {
         font-size: 12px;
-        font-family: $font-quicksand;
         font-weight: 700;
-        color: #1D1D1D;
+        color: $blackcolor;
+        opacity: 0.5;
     }
 
     &__done {
-        font-family: $font-nunito;
+        font-family: "Nunito";
         font-weight: 700;
         font-size: 24px;
+        margin-top: 11px;
     }
 
     &__evaluation-title {
@@ -142,7 +141,7 @@
         position: absolute;
         left: 680px;
         bottom: -7px;
-        padding: 20px;
+        padding: 26px 20px 25px 21px;
         width: 166px;
         height: 166px;
         background: #FFFFFF;
@@ -158,43 +157,39 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
     }
 
     &__name-people {
         margin-left: 10px;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 600;
-        font-family: $font-quicksand;
     }
 
     &__uptech {
-        font-size: 10px;
+        font-size: 6px;
         opacity: 0.5;
-        margin-left: 10px;
-        font-family: $font-quicksand;
+        margin: 2px 0 0 10px;
     }
 
     &__message {
         font-size: 10px;
         margin-top: 17px;
-        font-family: $font-nunito;
+        font-family: "Nunito";
     }
 }
 
 .about {
     margin-top: 206px;
-    font-family: $font-quicksand;
 
     &__head-text {
         text-align: center;
         font-weight: 600;
         font-size: 24px;
-        color: #377DFF;
+        color: $dodgerblue;
     }
 
     &__title {
-        font-family: $font-nunito;
+        font-family: "Nunito";
         text-align: center;
         margin-top: 20px;
         font-weight: 700;
