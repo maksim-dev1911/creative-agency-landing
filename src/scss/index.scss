@@ -15,8 +15,7 @@ body {
 .header {
     max-width: $container-width;
     width: 100%;
-    margin: auto;
-    margin-top: 72px;
+    margin: 72px auto 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,11 +55,11 @@ body {
     a {
         text-decoration: none;
         font-size: 18px;
-        color: $blackcolor;
+        color: $black-color;
         transition: 0.5s;
 
         &:hover {
-            text-shadow: 0 0 .65px $blackcolor, 0 0 .65px $blackcolor;
+            text-shadow: 0 0 .65px $black-color, 0 0 .65px $black-color;
             transition: 0.5s;
         }
     }
@@ -73,7 +72,7 @@ body {
         text-align: center;
         font-size: 64px;
         font-weight: 800;
-        color: $blackcolor;
+        color: $black-color;
         font-family: "Nunito";
         max-width: 749px;
         width: 100%;
@@ -84,7 +83,7 @@ body {
         text-align: center;
         font-weight: 400;
         font-size: 20px;
-        color: $greycolor;
+        color: $grey-color;
         max-width: 767px;
         width: 100%;
         margin: 24px auto 0;
@@ -117,7 +116,7 @@ body {
     &__great-project {
         font-size: 12px;
         font-weight: 700;
-        color: $blackcolor;
+        color: $black-color;
         opacity: 0.5;
     }
 
@@ -180,18 +179,16 @@ body {
 }
 
 .about {
-    margin-top: 206px;
-    font-family: $font-quicksand;
     max-width: $container-width;
     width: 100%;
+    margin: 206px auto 0;
 
     &__head-text {
         text-align: center;
         font-weight: 600;
         font-size: 24px;
-        color: #377DFF;
+        color: $dodger-blue;
         margin-top: 206px;
-        color: $dodgerblue;
     }
 
     &__title {
@@ -229,12 +226,6 @@ body {
         display: flex;
 
         button {
-            font-weight: 700;
-            padding: 12px 50px;
-            border-radius: 24px;
-            font-size: 16px;
-            font-family: $font-quicksand;
-
             img {
                 margin-right: 10px;
             }
@@ -245,17 +236,10 @@ body {
         }
     }
 
-    &__about-button {
-        background: #377DFF;
-        color: #fff;
-        box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-        border: none;
-    }
-
     &__story-button {
         background: #fff;
-        color: #377DFF;
-        border: 1px solid #377DFF;
+        color: $dodger-blue;
+        border: 1px solid $dodger-blue;
         display: flex;
         align-items: center;
     }
