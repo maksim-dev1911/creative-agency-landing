@@ -213,11 +213,12 @@ body {
     &__text-inside {
         font-size: 20px;
         margin-left: 50px;
-    }
 
-    &__two-text-inside {
-        font-size: 20px;
-        margin: 24px 0 0 50px;
+       p {
+           &:not(:first-child) {
+               margin-top: 24px;
+           }
+       }
     }
 
     &__button {
