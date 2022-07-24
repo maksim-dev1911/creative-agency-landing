@@ -15,8 +15,7 @@ body {
 .header {
     max-width: $container-width;
     width: 100%;
-    margin: auto;
-    margin-top: 72px;
+    margin: 72px auto 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,11 +55,11 @@ body {
     a {
         text-decoration: none;
         font-size: 18px;
-        color: $blackcolor;
+        color: $black-color;
         transition: 0.5s;
 
         &:hover {
-            text-shadow: 0 0 .65px $blackcolor, 0 0 .65px $blackcolor;
+            text-shadow: 0 0 .65px $black-color, 0 0 .65px $black-color;
             transition: 0.5s;
         }
     }
@@ -73,7 +72,7 @@ body {
         text-align: center;
         font-size: 64px;
         font-weight: 800;
-        color: $blackcolor;
+        color: $black-color;
         font-family: "Nunito";
         max-width: 749px;
         width: 100%;
@@ -84,7 +83,7 @@ body {
         text-align: center;
         font-weight: 400;
         font-size: 20px;
-        color: $greycolor;
+        color: $grey-color;
         max-width: 767px;
         width: 100%;
         margin: 24px auto 0;
@@ -117,7 +116,7 @@ body {
     &__great-project {
         font-size: 12px;
         font-weight: 700;
-        color: $blackcolor;
+        color: $black-color;
         opacity: 0.5;
     }
 
@@ -180,13 +179,16 @@ body {
 }
 
 .about {
-    margin-top: 206px;
+    max-width: $container-width;
+    width: 100%;
+    margin: 206px auto 0;
 
     &__head-text {
         text-align: center;
         font-weight: 600;
         font-size: 24px;
-        color: $dodgerblue;
+        color: $dodger-blue;
+        margin-top: 206px;
     }
 
     &__title {
@@ -196,4 +198,51 @@ body {
         font-weight: 700;
         font-size: 55px;
     }
+
+    &__teammate {
+        display: flex;
+        margin-top: 38px;
+    }
+
+    &__our-teammate {
+
+        img {
+            max-width: 503px;
+        }
+    }
+
+    &__text-inside {
+        font-size: 20px;
+        margin-left: 50px;
+
+       p {
+           &:not(:first-child) {
+               margin-top: 24px;
+           }
+       }
+    }
+
+    &__button {
+        margin: 24px 0 0 65px;
+        display: flex;
+
+        button {
+            img {
+                margin-right: 10px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+    }
+
+    &__story-button {
+        background: #fff;
+        color: $dodger-blue;
+        border: 1px solid $dodger-blue;
+        display: flex;
+        align-items: center;
+    }
+
 }
