@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+.title {
+  text-align: center;
+
+  &--primary {
+    color: $dodger-blue;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &--secondary {
+    color: $black-color;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: "Nunito";
+  }
+}

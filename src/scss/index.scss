@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./components/button.scss";
+@import "./components/title.scss";
 
 * {
     box-sizing: border-box;
@@ -187,7 +188,6 @@ body {
         font-weight: 600;
         font-size: 24px;
         color: $dodger-blue;
-        margin-top: 206px;
     }
 
     &__title {
@@ -250,14 +250,15 @@ body {
     margin-top: 160px;
 
     &__head-text {
-        font-size: 24px;
         font-weight: 600;
+        font-size: 24px;
         color: $dodger-blue;
     }
 
     &__title {
         max-width: 419px;
         margin-top: 32px;
+        color: $black-color;
         font-weight: 700;
         font-size: 55px;
         font-family: "Nunito";
