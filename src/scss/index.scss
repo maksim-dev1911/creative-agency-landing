@@ -376,3 +376,69 @@ body {
     margin-top: 34px;
   }
 }
+
+.testimonial {
+  margin-top: 180px;
+
+  &__title-primary {
+    font-weight: 600;
+    font-size: 24px;
+    color: $dodger-blue;
+    text-align: center;
+  }
+
+  &__title-secondary {
+    font-weight: 600;
+    font-size: 55px;
+    color: $black-color;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Nunito";
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__card {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    width: 380px;
+    height: 335px;
+    padding: 50px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    img {
+      margin-right: 30px;
+    }
+  }
+
+  &__name-people {
+    font-weight: 600;
+    font-size: 20px;
+    color: $dodger-blue;
+  }
+
+  &__manager {
+    font-weight: 400;
+    font-size: 11px;
+    color: $grey-color;
+  }
+
+  &__data {
+    display: flex;
+  }
+
+  &__message {
+    margin-top: 25px;
+    opacity: 0.8;
+    color: $grey-color;
+  }
+
+}
