@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./components/button.scss";
+@import "./components/title.scss";
 
 * {
     box-sizing: border-box;
@@ -10,12 +11,13 @@
 body {
     font-family: "Quicksand";
     letter-spacing: 0.01em;
+    max-width: $container-width;
+    width: 100%;
+    margin: auto ;
 }
 
 .header {
-    max-width: $container-width;
-    width: 100%;
-    margin: 72px auto 0;
+    margin: 72px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -179,16 +181,13 @@ body {
 }
 
 .about {
-    max-width: $container-width;
-    width: 100%;
-    margin: 206px auto 0;
+    margin-top: 206px;
 
     &__head-text {
         text-align: center;
         font-weight: 600;
         font-size: 24px;
-        color: $dodger-blue;
-        margin-top: 206px;
+        color: $dodger-blue-color;
     }
 
     &__title {
@@ -239,10 +238,78 @@ body {
 
     &__story-button {
         background: #fff;
-        color: $dodger-blue;
-        border: 1px solid $dodger-blue;
+        color: $dodger-blue-color;
+        border: 1px solid $dodger-blue-color;
         display: flex;
         align-items: center;
     }
+}
 
+.services {
+    display: flex;
+    margin-top: 160px;
+
+    &__head-text {
+        font-weight: 600;
+        font-size: 24px;
+        color: $dodger-blue-color;
+    }
+
+    &__title {
+        max-width: 419px;
+        margin-top: 32px;
+        color: $black-color;
+        font-weight: 700;
+        font-size: 55px;
+        font-family: "Nunito";
+    }
+
+    &__description {
+        max-width: 520px;
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 20px;
+        color: $dark-gray-color;
+    }
+
+    &__read-more {
+        display: flex;
+        align-items: center;
+        float: right;
+        margin-top: 36px;
+
+        h3 {
+            margin-right: 7px;
+            font-weight: 700;
+            font-size: 20px;
+            color: $dodger-blue-color;
+        }
+    }
+
+    &__container-text {
+        max-width: 521px;
+    }
+
+    &__areas {
+        display: grid;
+        grid-template-columns: repeat(2, 262px);
+        grid-template-rows: repeat(2, 269px);
+        grid-gap: 40px;
+        margin-left: 157px;
+    }
+
+    &__area {
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        text-align: center;
+        padding: 35px 45px;
+
+        h1 {
+            margin-top: 32px;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
 }
