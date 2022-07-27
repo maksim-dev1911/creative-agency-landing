@@ -183,12 +183,12 @@ body {
 .about {
   margin-top: 206px;
 
-  &__head-text {
-    text-align: center;
-    font-weight: 600;
-    font-size: 24px;
-    color: $dodger-blue;
-  }
+    &__head-text {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        color: $dodger-blue-color;
+    }
 
   &__title {
     font-family: "Nunito";
@@ -236,24 +236,24 @@ body {
     }
   }
 
-  &__story-button {
-    background: #fff;
-    color: $dodger-blue;
-    border: 1px solid $dodger-blue;
-    display: flex;
-    align-items: center;
-  }
+    &__story-button {
+        background: #fff;
+        color: $dodger-blue-color;
+        border: 1px solid $dodger-blue-color;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .services {
   display: flex;
   margin-top: 160px;
 
-  &__head-text {
-    font-weight: 600;
-    font-size: 24px;
-    color: $dodger-blue;
-  }
+    &__head-text {
+        font-weight: 600;
+        font-size: 24px;
+        color: $dodger-blue-color;
+    }
 
   &__title {
     max-width: 419px;
@@ -264,13 +264,13 @@ body {
     font-family: "Nunito";
   }
 
-  &__description {
-    max-width: 520px;
-    margin-top: 18px;
-    font-weight: 400;
-    font-size: 20px;
-    color: $grey-color;
-  }
+    &__description {
+        max-width: 520px;
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 20px;
+        color: $dark-gray-color;
+    }
 
   &__read-more {
     display: flex;
@@ -278,13 +278,13 @@ body {
     float: right;
     margin-top: 36px;
 
-    h3 {
-      margin-right: 7px;
-      font-weight: 700;
-      font-size: 20px;
-      color: $dodger-blue;
+        h3 {
+            margin-right: 7px;
+            font-weight: 700;
+            font-size: 20px;
+            color: $dodger-blue-color;
+        }
     }
-  }
 
   &__container-text {
     max-width: 521px;
