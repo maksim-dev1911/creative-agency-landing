@@ -397,7 +397,8 @@ main {
   background: $fuscous-grey-color;
   padding: 60px;
   font-family: "Quicksand";
-  margin-top: 178px;
+  max-width: $container-width;
+  margin: 178px auto 0;
 
   &__logo {
     background: #ffffff;
