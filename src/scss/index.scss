@@ -3,185 +3,185 @@
 @import "./components/title.scss";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Quicksand";
-    letter-spacing: 0.01em;
-    max-width: $container-width;
-    width: 100%;
-    margin: auto ;
+  font-family: "Quicksand";
+  letter-spacing: 0.01em;
+  max-width: $container-width;
+  width: 100%;
+  margin: auto;
 }
 
 .header {
-    margin: 72px 0 0 0;
+  margin: 72px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  }
 
-    &__logo {
-        display: flex;
-        align-items: center;
+  &__agency {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__creative {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__nav-item {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-right: 50px;
     }
+  }
 
-    &__agency {
-        font-weight: 700;
-        font-size: 20px;
+  p {
+    margin-left: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: $black-color;
+    transition: 0.5s;
+
+    &:hover {
+      text-shadow: 0 0 .65px $black-color, 0 0 .65px $black-color;
+      transition: 0.5s;
     }
-
-    &__creative {
-        font-weight: 400;
-        font-size: 16px;
-        margin-top: 4px;
-    }
-
-    &__nav {
-        display: flex;
-    }
-
-    &__nav-item {
-        list-style-type: none;
-
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
-    }
-
-    p {
-        margin-left: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 18px;
-        color: $black-color;
-        transition: 0.5s;
-
-        &:hover {
-            text-shadow: 0 0 .65px $black-color, 0 0 .65px $black-color;
-            transition: 0.5s;
-        }
-    }
+  }
 }
 
 .banner {
-    margin-top: 68px;
+  margin-top: 68px;
 
-    &__title {
-        text-align: center;
-        font-size: 64px;
-        font-weight: 800;
-        color: $black-color;
-        font-family: "Nunito";
-        max-width: 749px;
-        width: 100%;
-        margin: auto;
+  &__title {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 800;
+    color: $black-color;
+    font-family: "Nunito";
+    max-width: 749px;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: $grey-color;
+    max-width: 767px;
+    width: 100%;
+    margin: 24px auto 0;
+  }
+
+  &__container-button {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  &__background-img {
+    width: 100%;
+    margin: 103px auto 0;
+    position: relative;
+    max-width: 739px;
+  }
+
+  &__evaluation {
+    width: 175px;
+    height: 95px;
+    position: absolute;
+    left: -107px;
+    padding: 20px;
+    top: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+  }
+
+  &__great-project {
+    font-size: 12px;
+    font-weight: 700;
+    color: $black-color;
+    opacity: 0.5;
+  }
+
+  &__done {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 11px;
+  }
+
+  &__evaluation-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-right: 5px;
     }
+  }
 
-    &__description {
-        text-align: center;
-        font-weight: 400;
-        font-size: 20px;
-        color: $grey-color;
-        max-width: 767px;
-        width: 100%;
-        margin: 24px auto 0;
-    }
+  &__people-message {
+    position: absolute;
+    left: 680px;
+    bottom: -7px;
+    padding: 26px 20px 25px 21px;
+    width: 166px;
+    height: 166px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+  }
 
-    &__container-button {
-        text-align: center;
-        margin-top: 32px;
-    }
+  &__people-name {
+    margin-right: 3px;
+  }
 
-    &__background-img {
-        width: 100%;
-        margin: 103px auto 0;
-        position: relative;
-        max-width: 739px;
-    }
+  &__people {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-    &__evaluation {
-        width: 175px;
-        height: 95px;
-        position: absolute;
-        left: -107px;
-        padding: 20px;
-        top: 24px;
-        background: #FFFFFF;
-        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
-        border-radius: 16px;
-    }
+  &__name-people {
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: 600;
+  }
 
-    &__great-project {
-        font-size: 12px;
-        font-weight: 700;
-        color: $black-color;
-        opacity: 0.5;
-    }
+  &__uptech {
+    font-size: 6px;
+    opacity: 0.5;
+    margin: 2px 0 0 10px;
+  }
 
-    &__done {
-        font-family: "Nunito";
-        font-weight: 700;
-        font-size: 24px;
-        margin-top: 11px;
-    }
-
-    &__evaluation-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            margin-right: 5px;
-        }
-    }
-
-    &__people-message {
-        position: absolute;
-        left: 680px;
-        bottom: -7px;
-        padding: 26px 20px 25px 21px;
-        width: 166px;
-        height: 166px;
-        background: #FFFFFF;
-        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
-        border-radius: 16px;
-    }
-
-    &__people-name {
-        margin-right: 3px;
-    }
-
-    &__people {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    &__name-people {
-        margin-left: 10px;
-        font-size: 10px;
-        font-weight: 600;
-    }
-
-    &__uptech {
-        font-size: 6px;
-        opacity: 0.5;
-        margin: 2px 0 0 10px;
-    }
-
-    &__message {
-        font-size: 10px;
-        margin-top: 17px;
-        font-family: "Nunito";
-    }
+  &__message {
+    font-size: 10px;
+    margin-top: 17px;
+    font-family: "Nunito";
+  }
 }
 
 .about {
-    margin-top: 206px;
+  margin-top: 206px;
 
     &__head-text {
         text-align: center;
@@ -190,51 +190,51 @@ body {
         color: $dodger-blue-color;
     }
 
-    &__title {
-        font-family: "Nunito";
-        text-align: center;
-        margin-top: 20px;
-        font-weight: 700;
-        font-size: 55px;
+  &__title {
+    font-family: "Nunito";
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 55px;
+  }
+
+  &__teammate {
+    display: flex;
+    margin-top: 38px;
+  }
+
+  &__our-teammate {
+
+    img {
+      max-width: 503px;
     }
+  }
 
-    &__teammate {
-        display: flex;
-        margin-top: 38px;
+  &__text-inside {
+    font-size: 20px;
+    margin-left: 50px;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
     }
+  }
 
-    &__our-teammate {
+  &__button {
+    margin: 24px 0 0 65px;
+    display: flex;
 
-        img {
-            max-width: 503px;
-        }
+    button {
+      img {
+        margin-right: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
     }
-
-    &__text-inside {
-        font-size: 20px;
-        margin-left: 50px;
-
-       p {
-           &:not(:first-child) {
-               margin-top: 24px;
-           }
-       }
-    }
-
-    &__button {
-        margin: 24px 0 0 65px;
-        display: flex;
-
-        button {
-            img {
-                margin-right: 10px;
-            }
-
-            &:not(:last-child) {
-                margin-right: 25px;
-            }
-        }
-    }
+  }
 
     &__story-button {
         background: #fff;
@@ -246,8 +246,8 @@ body {
 }
 
 .services {
-    display: flex;
-    margin-top: 160px;
+  display: flex;
+  margin-top: 160px;
 
     &__head-text {
         font-weight: 600;
@@ -255,14 +255,14 @@ body {
         color: $dodger-blue-color;
     }
 
-    &__title {
-        max-width: 419px;
-        margin-top: 32px;
-        color: $black-color;
-        font-weight: 700;
-        font-size: 55px;
-        font-family: "Nunito";
-    }
+  &__title {
+    max-width: 419px;
+    margin-top: 32px;
+    color: $black-color;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: "Nunito";
+  }
 
     &__description {
         max-width: 520px;
@@ -272,11 +272,11 @@ body {
         color: $dark-gray-color;
     }
 
-    &__read-more {
-        display: flex;
-        align-items: center;
-        float: right;
-        margin-top: 36px;
+  &__read-more {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 36px;
 
         h3 {
             margin-right: 7px;
@@ -286,30 +286,93 @@ body {
         }
     }
 
-    &__container-text {
-        max-width: 521px;
+  &__container-text {
+    max-width: 521px;
+  }
+
+  &__areas {
+    display: grid;
+    grid-template-columns: repeat(2, 262px);
+    grid-template-rows: repeat(2, 269px);
+    grid-gap: 40px;
+    margin-left: 157px;
+  }
+
+  &__area {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    padding: 35px 45px;
+
+    h1 {
+      margin-top: 32px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+}
+
+.portfolio {
+  margin-top: 153px;
+
+  &__title-primary {
+    color: $dodger-blue;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__title-secondary {
+    color: $black-color;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: "Nunito";
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 20px;
+    color: $grey-color;
+    text-align: center;
+    max-width: 674px;
+    width: 100%;
+    margin: 28px auto 0;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
+
+  &__card {
+    position: relative;
+
+    h1 {
+      position: absolute;
+      color: #ffffff;
     }
 
-    &__areas {
-        display: grid;
-        grid-template-columns: repeat(2, 262px);
-        grid-template-rows: repeat(2, 269px);
-        grid-gap: 40px;
-        margin-left: 157px;
+    &:not(:last-child) {
+      margin-right: 69px;
     }
+  }
 
-    &__area {
-        background: #FFFFFF;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
-        border-radius: 30px;
-        text-align: center;
-        padding: 35px 45px;
+  &__sides {
+    left: 24px;
+    top: 295px;
+  }
 
-        h1 {
-            margin-top: 32px;
-            font-weight: 700;
-            font-size: 24px;
-        }
-    }
+  &__center {
+    left: 24px;
+    top: 350px;
+  }
+
+  &__button-container {
+    text-align: center;
+    margin-top: 34px;
+  }
 }
