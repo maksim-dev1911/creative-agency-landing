@@ -187,7 +187,7 @@ body {
         text-align: center;
         font-weight: 600;
         font-size: 24px;
-        color: $dodger-blue;
+        color: $dodger-blue-color;
     }
 
     &__title {
@@ -238,8 +238,8 @@ body {
 
     &__story-button {
         background: #fff;
-        color: $dodger-blue;
-        border: 1px solid $dodger-blue;
+        color: $dodger-blue-color;
+        border: 1px solid $dodger-blue-color;
         display: flex;
         align-items: center;
     }
@@ -252,7 +252,7 @@ body {
     &__head-text {
         font-weight: 600;
         font-size: 24px;
-        color: $dodger-blue;
+        color: $dodger-blue-color;
     }
 
     &__title {
@@ -269,7 +269,7 @@ body {
         margin-top: 18px;
         font-weight: 400;
         font-size: 20px;
-        color: $dark-gray;
+        color: $dark-gray-color;
     }
 
     &__read-more {
@@ -282,7 +282,7 @@ body {
             margin-right: 7px;
             font-weight: 700;
             font-size: 20px;
-            color: $dodger-blue;
+            color: $dodger-blue-color;
         }
     }
 
