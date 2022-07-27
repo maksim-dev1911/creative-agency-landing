@@ -349,5 +349,42 @@ body {
     justify-content: center;
     margin-top: 50px;
   }
+}
 
+.collaboration {
+  margin-top: 247px;
+  display: flex;
+
+  &__align-left {
+    text-align: left;
+  }
+
+  &__block-left {
+    max-width: 491px;
+
+    p {
+      margin-top: 25px;
+    }
+
+    button {
+      margin-top: 25px;
+    }
+  }
+
+  &__block-right {
+
+  }
+
+  &__background-img-one {
+    position: absolute;
+    left: 753px;
+    top: 4470px;
+    max-width: 325px;
+  }
+
+  &__background-img-two {
+    position: absolute;
+    left: 1046px;
+    max-width: 294px;
+  }
 }
