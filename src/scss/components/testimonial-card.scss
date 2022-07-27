@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.testimonial-card {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 380px;
+  height: 335px;
+  padding: 50px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  img {
+    margin-right: 30px;
+  }
+
+  &__data {
+    display: flex;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    color: $dodger-blue-color;
+  }
+
+  &__manager {
+    font-weight: 400;
+    font-size: 11px;
+    color: $dark-gray-color;
+  }
+
+  &__message {
+    margin-top: 25px;
+    opacity: 0.8;
+    color: $dark-gray-color;
+  }
+}

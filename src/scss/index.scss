@@ -1,6 +1,8 @@
 @import "./variables.scss";
 @import "./components/button.scss";
 @import "./components/title.scss";
+@import "./components/testimonial-card.scss";
+@import "./components/description.scss";
 
 * {
   box-sizing: border-box;
@@ -70,6 +72,10 @@ body {
 .banner {
   margin-top: 68px;
 
+  &__max-width-description {
+    max-width: 767px;
+  }
+
   &__title {
     text-align: center;
     font-size: 64px;
@@ -79,16 +85,6 @@ body {
     max-width: 749px;
     width: 100%;
     margin: auto;
-  }
-
-  &__description {
-    text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-    color: $grey-color;
-    max-width: 767px;
-    width: 100%;
-    margin: 24px auto 0;
   }
 
   &__container-button {
@@ -183,19 +179,8 @@ body {
 .about {
   margin-top: 206px;
 
-    &__head-text {
-        text-align: center;
-        font-weight: 600;
-        font-size: 24px;
-        color: $dodger-blue-color;
-    }
-
-  &__title {
-    font-family: "Nunito";
-    text-align: center;
+  h3 {
     margin-top: 20px;
-    font-weight: 700;
-    font-size: 55px;
   }
 
   &__teammate {
@@ -215,6 +200,7 @@ body {
     margin-left: 50px;
 
     p {
+      color: $dark-gray-color;
       &:not(:first-child) {
         margin-top: 24px;
       }
@@ -236,41 +222,30 @@ body {
     }
   }
 
-    &__story-button {
-        background: #fff;
-        color: $dodger-blue-color;
-        border: 1px solid $dodger-blue-color;
-        display: flex;
-        align-items: center;
-    }
+  &__story-button {
+    background: #fff;
+    color: $dodger-blue-color;
+    border: 1px solid $dodger-blue-color;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .services {
   display: flex;
   margin-top: 160px;
 
-    &__head-text {
-        font-weight: 600;
-        font-size: 24px;
-        color: $dodger-blue-color;
-    }
-
-  &__title {
-    max-width: 419px;
+  h3 {
     margin-top: 32px;
-    color: $black-color;
-    font-weight: 700;
-    font-size: 55px;
-    font-family: "Nunito";
   }
 
-    &__description {
-        max-width: 520px;
-        margin-top: 18px;
-        font-weight: 400;
-        font-size: 20px;
-        color: $dark-gray-color;
-    }
+  &__left-align {
+    text-align: left;
+  }
+
+  &__text-align-description {
+    text-align: left;
+  }
 
   &__read-more {
     display: flex;
@@ -278,13 +253,13 @@ body {
     float: right;
     margin-top: 36px;
 
-        h3 {
-            margin-right: 7px;
-            font-weight: 700;
-            font-size: 20px;
-            color: $dodger-blue-color;
-        }
+    h4 {
+      margin-right: 7px;
+      font-weight: 700;
+      font-size: 20px;
+      color: $dodger-blue-color;
     }
+  }
 
   &__container-text {
     max-width: 521px;
@@ -306,7 +281,7 @@ body {
     text-align: center;
     padding: 35px 45px;
 
-    h1 {
+    p {
       margin-top: 32px;
       font-weight: 700;
       font-size: 24px;
@@ -317,29 +292,12 @@ body {
 .portfolio {
   margin-top: 153px;
 
-  &__title-primary {
-    color: $dodger-blue;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-  }
-
-  &__title-secondary {
-    color: $black-color;
-    font-weight: 700;
-    font-size: 55px;
-    font-family: "Nunito";
-    text-align: center;
+  h3 {
     margin-top: 20px;
   }
 
-  &__description {
-    font-size: 20px;
-    color: $grey-color;
-    text-align: center;
+  &__max-width-description {
     max-width: 674px;
-    width: 100%;
-    margin: 28px auto 0;
   }
 
   &__cards {
@@ -351,8 +309,10 @@ body {
   &__card {
     position: relative;
 
-    h1 {
+    p {
       position: absolute;
+      font-weight: 700;
+      font-size: 24px;
       color: #ffffff;
     }
 
@@ -380,65 +340,14 @@ body {
 .testimonial {
   margin-top: 180px;
 
-  &__title-primary {
-    font-weight: 600;
-    font-size: 24px;
-    color: $dodger-blue;
-    text-align: center;
-  }
-
-  &__title-secondary {
-    font-weight: 600;
-    font-size: 55px;
-    color: $black-color;
-    text-align: center;
+  h3 {
     margin-top: 20px;
-    font-family: "Nunito";
   }
 
   &__cards {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-  }
-
-  &__card {
-    background: #FFFFFF;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    width: 380px;
-    height: 335px;
-    padding: 50px;
-
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-
-    img {
-      margin-right: 30px;
-    }
-  }
-
-  &__name-people {
-    font-weight: 600;
-    font-size: 20px;
-    color: $dodger-blue;
-  }
-
-  &__manager {
-    font-weight: 400;
-    font-size: 11px;
-    color: $grey-color;
-  }
-
-  &__data {
-    display: flex;
-  }
-
-  &__message {
-    margin-top: 25px;
-    opacity: 0.8;
-    color: $grey-color;
   }
 
 }
