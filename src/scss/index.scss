@@ -10,7 +10,7 @@
   padding: 0;
 }
 
-body {
+main {
   font-family: "Quicksand";
   letter-spacing: 0.01em;
   max-width: $container-width;
@@ -19,10 +19,13 @@ body {
 }
 
 .header {
-  margin: 72px 0 0 0;
+  margin: 72px auto 0;
+  width: 100%;
+  max-width: $container-width;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Quicksand";
 
   &__logo {
     display: flex;
@@ -201,6 +204,7 @@ body {
 
     p {
       color: $dark-gray-color;
+
       &:not(:first-child) {
         margin-top: 24px;
       }
@@ -349,5 +353,108 @@ body {
     justify-content: center;
     margin-top: 50px;
   }
+}
 
+.collaboration {
+  margin-top: 247px;
+  display: flex;
+
+  &__align-left {
+    text-align: left;
+  }
+
+  &__block-right {
+    position: relative;
+  }
+
+  &__block-left {
+    max-width: 491px;
+
+    p {
+      margin-top: 25px;
+    }
+
+    button {
+      margin-top: 25px;
+    }
+  }
+
+  &__background-img-one {
+    position: absolute;
+    left: 153px;
+    top: 70px;
+    max-width: 325px;
+  }
+
+  &__background-img-two {
+    position: absolute;
+    left: 450px;
+    max-width: 294px;
+  }
+}
+
+.footer {
+  background: $fuscous-grey-color;
+  padding: 130px;
+  font-family: "Quicksand";
+  margin-top: 178px;
+
+  &__logo {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 68px;
+    max-height: 71px;
+  }
+
+  &__container-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-img {
+    margin-top: 168px;
+    text-align: center;
+    img {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__col {
+    &:not(:last-child) {
+      margin-right: 77px;
+    }
+  }
+
+  li {
+    list-style-type: none;
+    color: #ffffff;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  b {
+    color: #FFFFFF;
+    font-size: 22px;
+  }
+
+  p {
+    text-align: center;
+    margin: 16px auto 0;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  &__container-col {
+    display: flex;
+  }
+
+  &__social-img {
+    border-bottom: 1px solid #FFFFFF;
+    max-width: 499px;
+    margin: 168px auto 0;
+    padding-bottom: 16px;
+  }
 }
